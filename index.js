@@ -21,8 +21,9 @@ function deepestChild(){
   var start = document.getElementById('grand-node');
   var child = start.child[0];
   
-  while(child)
+  while(child){
   child = start;
   start = start.child[0];
   return child;
+}
 }
