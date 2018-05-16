@@ -18,5 +18,6 @@ for (let i = 0; i < lis.length; i++) {
 }
 
 function deepestChild(){
-  
+  var start = document.getElementByID('grand-node');
+  var child = 
 }
