@@ -22,7 +22,7 @@ function deepestChild(){
   var child = start.child[0];
   
   while(child)
-  start = child;
-  
+  child = start;
+  start = start.child[0];
   return child;
 }
