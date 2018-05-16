@@ -19,6 +19,8 @@ for (let i = 0; i < lis.length; i++) {
 
 function deepestChild(){
   var start = document.getElementById('grand-node');
-  var child = start.deepestChild;
+  var child = start.child[0];
+  
+  while(star.child[0])
   return child;
 }
