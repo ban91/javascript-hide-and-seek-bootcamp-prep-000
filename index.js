@@ -1,4 +1,4 @@
 function getFirstSelector(selector){
-  const match = document.querySelectorAll(selector);
+  const match = document.querySelector(selector);
   return match;
 }
