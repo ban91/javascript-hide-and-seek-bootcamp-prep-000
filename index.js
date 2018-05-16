@@ -18,12 +18,13 @@ for (let i = 0; i < lis.length; i++) {
 }
 
 function deepestChild(){
-  var start = document.getElementById('grand-node');
-  var child = start.child[0];
-  
-  while(child){
-  child = start;
-  start = start.child[0];
-  return child;
-}
+  let node = document.getElementById('grand-node')
+  let nextNode = node.children[0]
+
+  while (nextNode) {
+    node = nextNode
+    nextNode = node.children[0]
+  }
+
+  return node
 }
